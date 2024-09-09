@@ -1,0 +1,21 @@
+@import "/vendor/filament/filament/resources/css/theme.css";
+
+@config 'tailwind.config.js';
+
+@layer components {
+    .fi-logo {
+        @apply mb-4;
+    }
+
+    .fi-body::before {
+        content: "";
+        height: 65px; /* Adjust the total height as needed */
+        display: block;
+        background: linear-gradient(
+            to bottom,
+            #5bba47 72%,
+            white 34px 51px,
+            #ff0000 19%
+        );
+    }
+}
